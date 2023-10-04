@@ -1,0 +1,17 @@
+- CODIGO HTML
+El index unicamente imprime 3 parráfos, cada uno con su respectiva clase, donde su texto va a ser manipulado por medio de un querySelector en el código de JS.
+
+- CODIGO JAVASCRIPT
+Se declaran 2 variables para la refrencia hacia el link de nuestra API, se pudo colocar en una sola variable, pero teniendo 2, nos da opcion a poder jugar con las diferentes refrencias de nuestra API concatenando direcciones por medio de nuevas variables, tal como lo hace la variable usersEndpoint
+Se declaran 3 variables para el uso del DOM de HTML y se mandan a manipular por el nombre de su clase
+
+Se hace la declaración de una funcion asincrona, la cual recibe como parámetro un username y dentro se define el fetch dentro de una variable llamada response a la cual se le agrega un await para esperar la respuesta del mismo fetch, posterior a ello se delcara otra variable llamada data donde vamos a convertir nuestra repuesta del fetch a objeto JSON, seguido colocamos las propiedades correspondientes de nuestro objeto dentro de su respectiva variable.
+
+Se declara la función error, la cual será llamada por si el fetch no responde, manipulando la variable n e imprimiendo un texto seguido del error en bruto.
+
+Se manda a llamar la función con el username "stolinski" y se le agrega el .catch para que realice la función "handleError" en caso de que el fetch no responda.
+
+
+/*
+Author: Brandon Palacios CH31
+*/
